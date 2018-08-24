@@ -1,0 +1,77 @@
+Imbalanced data consists data classes not 
+equally represented.
+Typical problems:
+  - fraud
+  - machine failure
+  -healthcare
+
+Accuracy paradox:
+  - In this cases we have high accuracies 
+  on the first model attempts,, but normally
+  are worst than a blind bet on the bigger class
+  
+  Tactics to combat imbalanced Training data:
+  
+  1) More data
+  If it is possible, we must try collect more data.
+  Specially if it is from the smaller class.
+  
+  2)Changing metric
+  Has seen the accuracy is not the best metric
+  to evaluate our model.
+    In fact we must use:
+          - confusion matrix
+          - Precision
+          - Recall
+          - F1 score =  2 * ((Precison * Recall)
+                          ---------------------
+                           Precision + recall
+          - Kappa
+          - ROC curves- On ROC curves we must
+          select a performance acessment based 
+          on buseness context.
+          
+ 3) Resampling our dataset
+      3.1 - over-sampling with replacement:
+      (consists on adding dupplciates if the 
+      under-represented class) - with less than undred
+      3.2 - under - sampling: (consists on 
+      eliminating over represented classes)
+      with more than hundred of rows
+  
+  
+ We do not need to achieve 1:1 ratio. Should try several ration
+ 
+ 4) Synthetic Samples
+ 
+ A simple way to generate synthetic samples is 
+ to randomly sample the attributes from instance
+  in the minority class.
+  
+  The more common algorithm is called SMOTE
+  (Synthetic Minority Over-sampling)
+  
+  5) Try different Algorithms
+  
+        Try several algororithm, but in general
+        random forests work fine.
+        
+  6) Penalized Models:
+  
+        - Penalized SVM
+        - Penalized LDA
+        
+        
+   7) Different Perspective
+        - Anomaly Detection
+        - Change Detection
+        - Break the ove sampled class into
+        other small classes
+        -
+        
+   8) Getting creative
+    
+      
+      
+     
+  
